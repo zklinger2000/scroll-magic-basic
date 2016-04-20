@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <title>Zack Klinger | Web Developer | Portland, OR</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/plugins/ScrollToPlugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/debug.addIndicators.js"></script>
+  <!-- load picturefill library -->
+  <script src="js/picturefill.min.js" async></script>
+  <!-- app file -->
+  <script src="js/app.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+<header role="banner" id="top">
+  <nav class="anchor-nav" role="navigation">
+    <a href="#intro" id="intro-anchor">Zack Klinger</a>
+    <a href="#portfolio" id="portfolio-anchor">Portfolio</a>
+    <a href="#skills" id="skills-anchor">Skills</a>
+    <a href="#gallery" id="gallery-anchor">Gallery</a>
+    <a href="#contact" id="contact-anchor">Contact</a>
+  </nav>
+</header>
+<main class="full-screen" id="intro" role="main">
+  <section class="full-screen intro" id="start">
+    <div class="header-content">
+      <picture>
+        <source srcset="img/profile_picture_large.jpg" media="(min-width: 1024px)">
+        <source srcset="img/profile_picture_medium.jpg" media="(min-width: 720px)">
+        <img srcset="img/profile_picture_small.jpg" alt="Image of Zack Klinger" class="profile-image">
+      </picture>
+      <h1 class="tag name">Hello, I’m Zack.</h1>
+      <p class="tag location">Portland, OR</p>
+    </div>
+    <div class="about">
+      <h3>About me</h3>
+      <p class="parallaxParent">
+        I'm a web developer with a background in animation, photography and visual effects.
+
+        I've done everything from software QA to running my own business in arboriculture. 
+        Throw into the mix a bachelors in photography, a minor in business and managing a 
+        motion capture studio and you start to get an idea of the breadth of skills I bring 
+        to every project.
+      </p>
+    </div>
+  </section>
+  <section class="full-screen portfolio" id="portfolio">
+    <h2 class="portfolio-heading">PORTFOLIO</h2>
+    <div class="portfolio-container">
+      <div class="section">
+        <img src="img/portfolio-1.png" alt="Marketing App picture" class="section-image">
+        <h3>Marketing Page</h3>
+        <p>
+          This project shows the front page of a marketing website meant for a specific
+          business I'm interested in.
+        </p>
+      </div>
+      <div class="section">
+        <img src="img/portfolio-2.png" alt="Search Page picture" class="section-image">
+        <h3>Search Page</h3>
+        <p>
+          This project searches through a specific database to find information that the
+          user is trying to look up.
+        </p>
+      </div>
+      <div class="section">
+        <img src="img/portfolio-3.png" alt="Travel App picture" class="section-image">
+        <h3>Travel App</h3>
+        <p>
+          This project compares travel times based on different transportation methods and 
+          tells you the best one.
+        </p>
+      </div>
+      <div class="section">
+        <img src="img/portfolio-6.png" alt="Mapping App picture" class="section-image">
+        <h3>Map of Favorite Spots</h3>
+        <p>
+          This project uses mapping apis to plot points for my favorite spots in the city for a 
+          do-it-yourself walking tour.
+        </p>
+      </div>
+      <div class="section">
+        <img src="img/portfolio-4.png" alt="Calculator App picture" class="section-image">
+        <h3>Calculator</h3>
+        <p>
+          Someone can enter in the numbers they want, and press the big blue button and get the result.
+        </p>
+      </div>
+      <div class="section">
+        <img src="img/portfolio-7.png" alt="Media Player picture" class="section-image">
+        <h3>Media Player</h3>
+        <p>
+          Here we have some really fancy custom controls for a slick looking movie watching experience.
+        </p>
+      </div>
+      <div class="section twitchtv">
+        <img src="img/portfolio-13.png" alt="Twitch.tv App picture" class="section-image">
+        <h3>TwitchTV Viewer</h3>
+        <p>
+          You like watching other people do stuff?  Here's the app for you!
+        </p>
+      </div>
+    </div>
+  </section>
+  <section class="full-screen skills" id="skills">
+    <h2>SKILLS</h2>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>Javascript</li>
+      <li>Node.js</li>
+      <li>Angular</li>
+      <li>React</li>
+      <li>MongoDB</li>
+      <li>Postgres</li>
+    </ul>
+  </section> 
+  <section class="full-screen gallery" id="gallery">
+    <h2>GALLERY</h2>
+    <img src="img/portfolio-5.png" alt="Photo Gallery picture" class="section-image">
+    <h3>Photo Gallery</h3>
+    <p>
+      This project shows pictures from a recent trip to the viewer and allows them to easily
+      navigate through the photos.
+    </p>
+  </section> 
+  <section class="full-screen contact" id="contact">
+    <h2>CONTACT</h2>
+    <p>
+      If you're interested in chatting or want more information about what I've been working on,
+      I'd love to hear from you!
+    </p>
+    <div>
+      <div class="contact-item">
+        <div class="contact-title">Phone</div>
+        <div class="contact-info">+1 (111) 555-1234</div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-title">Email</div>
+        <div class="contact-info">email@yoursight.com</div>
+      </div>
+    </div>
+  </section> 
+</main>
+<footer>
+  <nav class="footer-nav" role="navigation">
+    <a href="#intro" class="profile-name">Zack Klinger</a>
+    <a href="#top" class="small-footer">BACK TO TOP</a>
+    <a href="#portfolio" class="medium-footer">PORTFOLIO</a>
+    <a href="#skills" class="medium-footer">SKILLS</a>
+    <a href="#gallery" class="medium-footer">GALLERY</a>
+  </nav>
+</footer>
+</body>
+</html>

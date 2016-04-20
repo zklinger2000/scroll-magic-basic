@@ -1,0 +1,208 @@
+/*============
+  Main Style
+============*/
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+html,
+body {
+  background: #111;
+  margin: 0;
+  height: 100%
+}
+/* Link Styles */
+a {
+  text-decoration: none;
+  color: #ddd;
+}
+a:hover {
+  color: #fff;
+}
+a.active {
+  color: #eee;
+  text-decoration: underline;
+}
+/* Text Styles */
+h1,
+p {
+  margin: 0;
+  padding: 5px 10px 20px;
+}
+p {
+  font-size: 1.1em;
+  line-height: 1.5em;
+}
+header {
+/*  position: fixed;*/
+  width: 100%;
+  background: #111;
+  text-align: center;
+  z-index: 1000;
+}
+.anchor-nav {
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.anchor-nav a {
+  font-weight: 700;
+  font-size: 1.4em;
+  padding: 10px 20px;
+}
+section {
+  background: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #222;
+}
+section.intro {
+  flex-direction: column;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+/*  line-height: 1.5;*/
+/*  padding-top: 250px;*/
+}
+.intro {
+  background: #ffca4e;
+}
+img.profile-image {
+  margin-top: 20px;
+  width: 150px;
+  height: 150px;
+  border: 2px solid #eee;
+  z-index: 999;
+}
+.header-content {
+  background: url('../img/pancake_daytime_small.jpg') no-repeat top center;
+  background-size: cover;
+  overflow: hidden;
+  min-height: 300px;
+  width: 100%;
+  color: #eee;
+/*  flex: 1;*/
+/*  align-self: flex-start;*/
+}
+.portfolio {
+  background: #111;
+  color: #ddd;
+}
+section.skills {
+  flex-direction: column;
+  justify-content: flex-start;
+}
+section.intro, section.skills {
+  overflow: hidden;
+}
+.parallaxParent, section.skills {
+  overflow: hidden;
+}
+.parallaxParent {
+  height: 400px;
+}
+section.skills {
+  height: 400px;
+}
+.skills {
+  background: #5089ec;
+}
+.parallaxParent > div {
+  height: 200%;
+  position: relative;
+  top: -100%;
+}
+.portfolio, .skills, .gallery, .contact {
+  flex-direction: column;
+}
+img.section-image {
+  width: 100%;
+}
+
+
+.profile-name {
+  color: #eee;
+}
+.footer-nav {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-nav a {
+  font-weight: 700;
+  font-size: 1.1em;
+}
+.medium-footer {
+  display: none;
+}
+.blue {
+	background-color: #3883d8;
+}
+.red {
+	background-color: #cf3535;
+}
+.orange {
+	background-color: #ea6300;
+}
+
+/*=========
+  Overlay
+=========*/
+
+
+/*===============
+  Media Queries
+===============*/
+
+@media screen and (min-width: 768px) {
+
+  h3 {
+    font-size: 1.7em;
+  }
+  .anchor-nav {
+    flex-direction: row;
+  }
+  #intro-anchor {
+    margin-right: auto;
+  }
+  img.profile-image {
+    float: left;
+    margin-left: 20px;
+    width: 200px;
+    height: 200px
+  }
+  h1.tag.name {
+    clear: left;
+    position: relative;
+    top: -100px;
+  }
+  .about > p {
+    text-align: left;
+    font-size: 1.5em;
+    padding: 20px;
+  }
+  .parallaxParent {
+    height: 300px;
+  }
+  section.skills {
+    height: 400px;
+  }
+
+/*
+  .full-screen {
+    height: 100%;  makes panels the entire window height 
+  }
+  .half-screen {
+    height: 50%;
+  }
+*/
+
+}
+
+@media screen and (min-width: 1024px) {
+
+  
+}
